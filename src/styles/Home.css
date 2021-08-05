@@ -1,0 +1,11 @@
+
+main {
+    position: relative;
+    top: 85px;
+    left: 117px;
+    width: calc(100% - 117px);   
+}
+
+.home-content {
+    padding: 5vh 5vw 0;
+}

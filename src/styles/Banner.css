@@ -1,0 +1,24 @@
+
+.main-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 18px 0px;
+    z-index: 2;
+    position: fixed;
+    margin: 0px;  
+  }
+
+.main-logo {
+    width: min(calc(120px + 5vw),180px);
+    padding-left: 28px; 
+}
+
+@media screen and (max-width: 300px){
+  .main-logo {
+    width: calc(60px + 7vw);
+  }
+}

@@ -1,0 +1,8 @@
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text-header {
+    font-size: 3em;
+}
