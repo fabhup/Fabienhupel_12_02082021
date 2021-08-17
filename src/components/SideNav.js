@@ -1,5 +1,4 @@
 import "../styles/SideNav.css";
-import { NavLink } from "react-router-dom";
 import yoga from '../assets/yoga.svg'
 import cycling from '../assets/cycling.svg'
 import swimming from '../assets/swimming.svg'

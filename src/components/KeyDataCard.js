@@ -11,8 +11,7 @@ function KeyDataCard({keyDataname, keyDatavalue}) {
         {"name":"carbohydrateCount", "title":"Glucides","unit":"g", "icone": carbohydrates, "color": "#FDCC0C"},
         {"name":"lipidCount", "title":"Lipides","unit":"g", "icone": lipids, "color": "#FD5181"}
     ]
-    const keyData = keyDatasParameters.filter(elt => elt.name === keyDataname)[0]
-    console.log(keyData)
+    const keyData = keyDatasParameters.find(elt => elt.name === keyDataname)
     return (
         <div className="keydata-card">
             <div className="keydata-card-icone" style={{backgroundColor: keyData.color}}>

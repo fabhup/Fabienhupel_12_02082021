@@ -7,26 +7,25 @@ import '../styles/App.css';
 import API from '../api/API'
 import React, { useState, useEffect } from 'react';
 
+// the constant USER_ID should be replaced by a getUserID after LoginPage
+const USER_ID = 18;
+
 function App() {
-  // function getUserPerformance(userid) {
-  //   return fetch("http://localhost:3000/user/"+userid+"/performance")
-  //     .then(response => response.data())
-  // }
-  // async function getUser() {
-  //   try {
-  //     const response = await axios.get('http://localhost:3000/user/12');
-  //     console.log(response.data);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-  // function getUser() {
-  //   return axios.get('http://localhost:3000/user/12');
-  // }
   const [userData, setUserData] = useState(null);
 
   useEffect(() => { 
-    API.getUser({userID:"12",setUserData: setUserData});
+    API.getUserData({userID:USER_ID, typeOfData:'MainData'})
+      .then(data => setUserData(data))
+      .catch(console.log("No data"));
+    API.getUserData({userID:USER_ID,typeOfData:'Performance'})
+      .then(data => console.log(data))
+      .catch(console.log("No data"));
+    API.getUserData({userID:USER_ID,typeOfData:'Activity'})
+      .then(data => console.log(data))
+      .catch(console.log("No data"));
+    API.getUserData({userID:USER_ID,typeOfData:'Sessions'})
+      .then(data => console.log(data))
+      .catch(console.log("No data"));
   }, []);
   
   return userData ? (
