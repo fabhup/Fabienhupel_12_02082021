@@ -1,0 +1,23 @@
+
+.barchart-activity {
+    border-radius: 5px;
+    width: 835px;
+    background-color: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.barchart-activity-title {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.barchart-activity .recharts-legend-item {
+    margin-right: 30px !important;
+}
+
+.barchart-activity .recharts-legend-item-text {
+    color: #74798C !important;
+}
