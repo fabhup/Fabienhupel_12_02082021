@@ -13,30 +13,28 @@ const USER_ID = 18;
 function App() {
   const [userData, setUserData] = useState(null);
   const [activityData, setActivityData] = useState(null);
+  const [performanceData, setPerformanceData] = useState(null);
 
   useEffect(() => { 
     API.getUserData({userID:USER_ID, typeOfData:'MainData'})
       .then(data => setUserData(data))
       .catch(console.log("No data"));
-    // API.getUserData({userID:USER_ID,typeOfData:'Performance'})
-    //   .then(data => console.log(data))
-    //   .catch(console.log("No data"));
-    // API.getUserData({userID:USER_ID,typeOfData:'Sessions'})
-    //   .then(data => console.log(data))
-    //   .catch(console.log("No data"));
-  }, []);
-
-  useEffect(() => { 
     API.getUserData({userID:USER_ID,typeOfData:'Activity'})
       .then(data => setActivityData(data))
       .catch(console.log("No data"));
+    API.getUserData({userID:USER_ID,typeOfData:'Performance'})
+      .then(data => setPerformanceData(data))
+      .catch(console.log("No data"));
+    // API.getUserData({userID:USER_ID,typeOfData:'Sessions'})
+    //   .then(data => console.log(data))
+    //   .catch(console.log("No data"));
   }, []);
   
   return userData && activityData ? (
     <Router>
       <Banner/>
       <SideBar/>
-      <Home userData={userData} activityData={activityData}/>
+      <Home userData={userData} activityData={activityData} performanceData={performanceData}/>
     </Router>
   )
   : (

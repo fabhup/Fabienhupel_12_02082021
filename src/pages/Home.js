@@ -3,20 +3,21 @@ import KeyDataCard from '../components/KeyDataCard'
 import BarChartActivity from '../components/BarChartActivity'
 import "../styles/Home.css";
 
-function Home(userData) {
-  const userInfos = userData.userData.userInfos
-  const userkeyData = userData.userData.keyData
-  const activityData = userData.activityData.sessions
+function Home({userData, activityData, performanceData} ) {
+  const userInfos = userData.userInfos
+  const userkeyData = userData.keyData
   return (
     <main>
         <div className="home-content">
             <WelcomeText firstName={userInfos.firstName}/>
-            {Object.entries(userkeyData).map(([key, value], i) => (
-                <KeyDataCard keyDataname={key} keyDatavalue={value} key={i}/>
-            ))}
-            <BarChartActivity data={activityData}/>
-            {/* {activityData ? console.log(activityData) : console.log("no activity data")
-            } */}
+            <div className="home-charts">
+              <BarChartActivity data={activityData.sessions}/>
+              <div className="home-keydatas">
+                {Object.entries(userkeyData).map(([key, value], i) => (
+                    <KeyDataCard keyDataname={key} keyDatavalue={value} key={i}/>
+                ))}
+              </div>
+            </div>
         </div>
     </main>
   );

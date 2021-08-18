@@ -9,3 +9,11 @@ main {
 .home-content {
     padding: 5vh 5vw 0;
 }
+
+.home-charts {
+    display:flex;
+}
+
+.home-keydatas {
+    
+}
