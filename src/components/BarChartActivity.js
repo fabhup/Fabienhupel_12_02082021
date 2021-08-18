@@ -2,7 +2,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'rec
 import "../styles/BarChartActivity.css";
 
 export default function BarChartActivity({data}) {
-    return (<div className="barchart-activity">
+    return (<div className="chart chart-large barchart-activity">
                 <span className="barchart-activity-title">Activité quotidienne</span>
                 <BarChart
                     width={815}
