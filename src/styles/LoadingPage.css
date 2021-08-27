@@ -1,0 +1,12 @@
+.loading-page {
+    padding-top: 40vh;
+    padding-left: 117px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.loading-page img {
+    width: 10em;
+
+}

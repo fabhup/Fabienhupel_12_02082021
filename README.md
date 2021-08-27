@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SportSee Project
 
-## Available Scripts
+## General information
 
-In the project directory, you can run:
+This project is the frontend of **SportSee Project**.\
+It has been developed by **Fabien HUPEL** for **OpenClassrooms FrontEnd Degree.**\
 
-### `yarn start`
+The SportSee FrontEnd Project has to used the SportSee Backend Project so you have to forked it from here :\
+`https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard`\
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [NodeJS (**version 12.18 or greater**)](https://nodejs.org/en/)
+- [**Install the SportSee Backend Project**](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
+   >- Fork the repository and clone it on your computer.
+   >- Open the backend project and run the command `npm install` (or `yarn`) in a new terminal to install all the dependencies. 
+   >- Run the backend with `npm start` (or `yarn dev`).
+   >- The message *"Magic happens on port **3000**"* is normally displayed on the terminal (if you see another port, keep it in mind for specified it after the front end install).
 
-### `yarn test`
+## Install the SportSee FrontEnd
+- Fork this repository and clone it on your computer (in a new repository).
+- Open the front end project and run the command `npm install` in a new terminal to install all the dependencies. 
+- If the backend is not active, launch it
+- **Only if the backend is launched on a port other than 3000** :
+    >- Open the file **/src/constants/routesAPI.js**
+    >- Replace the 3000 port in URL_API by the active port :  
+    >`const URL_API = 'http://localhost:newport'` 
+- Run the frontend with `npm start` (or `yarn dev`)
+- If you have this message in your terminal :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    >- `Something is already running on port 3000.`\
+    >`Would you like to run the app on another port instead? › (Y/n)`
 
-### `yarn build`
+  Press `Y` to run the frontEnd on another port than the backend (it will be probably launched on port 3001) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Open [http://localhost:3001](http://localhost:3001) to view the frontend in the browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The page will reload if you make edits.\
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## See the dashboard of another userID
 
-### `yarn eject`
+- Open the file **/src/components/App.js** and replace the current USER_ID value by another USER_ID.
+    >`const USER_ID = 18`
+- Find an existing USER_ID in the backend project (in the file **/app/data.js**)
+- If you specified an unknown USER_ID, you have to see the ErrorPage (cf. */src/components/App.js*)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Running the frontEnd without backend (with mock Data)
+- For development it's possible to run the project without the backend 
+- You can easily switch from backend calls to mockDATA calls for testing : 
+    >-  Just open the file **/src/api/API.js**
+    >-  Set `const activeMock` to `true` and API.getUserData will be set to getUserDataFromMock\
+        You can see the data used for mock method in the file **/src/__mocks__/data.js**
+    >-  Set `const activeMock` to `false` to reset API.getUserData to getUserDataFromAPI
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

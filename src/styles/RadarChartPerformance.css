@@ -1,16 +1,11 @@
 
 .radarchart-performance {
-    border-radius: 5px;
-    width: 260px;
-    height: 260px;
     background-color: #282D30;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
     color: white; 
-    font-size: 12px;
+
 }
 
 .radarchart-performance .recharts-polar-angle-axis-tick {
     fill: white !important;
+    font-size: 0.75em;
 }

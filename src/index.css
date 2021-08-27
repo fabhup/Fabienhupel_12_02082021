@@ -16,7 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: min(1em, 20px, 2vh, 2vw);
+  font-size: min(1em, 20px, 2vh, 1vw);
 }
 
 p {
@@ -29,6 +29,7 @@ strong {
   color: #FF0101;
   font-weight: normal;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

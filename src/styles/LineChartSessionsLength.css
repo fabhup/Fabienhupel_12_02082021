@@ -1,0 +1,12 @@
+.linechart-sessions-length {
+    background: #FF0000;
+    color: white;
+}
+
+.linechart-sessions-label {
+    width: 60%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
