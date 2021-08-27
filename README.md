@@ -4,10 +4,10 @@
 ## General information
 
 This project is the frontend of **SportSee Project**.\
-It has been developed by **Fabien HUPEL** for **OpenClassrooms FrontEnd Degree.**\
+It has been developed by **Fabien HUPEL** for **OpenClassrooms FrontEnd Degree.**
 
 The SportSee FrontEnd Project has to used the SportSee Backend Project so you have to forked it from here :\
-`https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard`\
+`https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard`
 
 ## Prerequisites
 
@@ -17,6 +17,7 @@ The SportSee FrontEnd Project has to used the SportSee Backend Project so you ha
    >- Open the backend project and run the command `npm install` (or `yarn`) in a new terminal to install all the dependencies. 
    >- Run the backend with `npm start` (or `yarn dev`).
    >- The message *"Magic happens on port **3000**"* is normally displayed on the terminal (if you see another port, keep it in mind for specified it after the front end install).
+   >- Go to [http://localhost:3000/user/12](http://localhost:3000/user/12) to check that backend is active 
 
 ## Install the SportSee FrontEnd
 - Fork this repository and clone it on your computer (in a new repository).
@@ -32,18 +33,16 @@ The SportSee FrontEnd Project has to used the SportSee Backend Project so you ha
     >- `Something is already running on port 3000.`\
     >`Would you like to run the app on another port instead? › (Y/n)`
 
-  Press `Y` to run the frontEnd on another port than the backend (it will be probably launched on port 3001) 
-
+  Press `Y` to run the frontEnd on another port than the backend (it will be probably launched on port 3001)
 - Open [http://localhost:3001](http://localhost:3001) to view the frontend in the browser.
-
-- The page will reload if you make edits.\
+- The page will reload if you make edits.
 
 ## See the dashboard of another userID
 
 - Open the file **/src/components/App.js** and replace the current USER_ID value by another USER_ID.
     >`const USER_ID = 18`
 - Find an existing USER_ID in the backend project (in the file **/app/data.js**)
-- If you specified an unknown USER_ID, you have to see the ErrorPage (cf. */src/components/App.js*)
+- If you specified an **unknown USER_ID**, you will be directed to the **ErrorPage** (cf. **/src/components/App.js**)
 
 ## Running the frontEnd without backend (with mock Data)
 - For development it's possible to run the project without the backend 
