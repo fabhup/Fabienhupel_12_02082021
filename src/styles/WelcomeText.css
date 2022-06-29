@@ -9,3 +9,14 @@
 .welcome-text-header {
     font-size: 3em;
 }
+
+@media screen and (max-width: 767px){
+    .welcome-text-header {
+        font-size: 2em;
+    }
+    .welcome-text {
+        font-size: 4em;
+        margin-top: 20px;
+    }
+  }
+  

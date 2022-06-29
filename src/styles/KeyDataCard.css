@@ -56,3 +56,16 @@
     font-size: .875em;
     color: #74798C;
 }
+
+@media screen and (max-width: 767px){
+    .keydata-card-value {
+        font-size: 5em;
+    }
+    .sidenav-button {
+        font-size: 4em;
+    }
+    .keydata-card-icone img {
+        width: 4em;
+    }
+  }
+  

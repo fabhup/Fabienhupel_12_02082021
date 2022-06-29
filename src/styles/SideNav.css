@@ -44,3 +44,14 @@
     filter: brightness(0) invert(1);
     transform: rotateZ(360deg);
 } 
+
+@media screen and (max-width: 600px){
+    .sidenav{
+      display: none;
+      width: 0;
+    }
+    .sidenav-button {
+        display:none;
+    }
+  }
+  

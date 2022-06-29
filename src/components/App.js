@@ -16,7 +16,7 @@ import {
 import axios from "axios";
 
 // The constant userID should be replaced later by a getUserID when the LoginPage will be developed
-const USER_ID = 18;
+const USER_ID = 12;
 let userID = USER_ID;
 
 function App() {

@@ -33,3 +33,12 @@
     font-weight: bold;
     font-size: 2em;
   }
+
+  @media screen and (max-width: 767px){
+    .radialbarchart-score {
+        font-size: 5em;
+    }
+    .radialbarchart-score .recharts-wrapper {
+        box-shadow: inset 0px 0px 0px 16vw #fbfbfb;
+    }
+  }

@@ -18,3 +18,15 @@
 .barchart-activity .recharts-legend-item-text {
     color: #74798C !important;
 }
+
+@media screen and (max-width: 767px){
+    .barchart-activity {
+        font-size: 3em;
+    }
+
+    .barchart-activity .recharts-legend-item {
+        display: flex;
+        margin-right: 5px !important;
+    }
+
+  }

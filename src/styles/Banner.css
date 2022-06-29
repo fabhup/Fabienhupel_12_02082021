@@ -17,8 +17,15 @@
     padding-left: 28px; 
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 767px){
   .main-logo {
-    width: calc(60px + 7vw);
+    width: calc(80px + 7vw);
+    padding-left: 0px; 
+    padding: 1rem 0;
+  }
+  .main-banner {
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
   }
 }

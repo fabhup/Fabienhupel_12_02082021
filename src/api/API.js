@@ -5,7 +5,7 @@ import { getUserDataFromMock } from "../__mocks__/data";
 /**
  * @const {boolean} activeMock - boolean to pass to mock mode if true or API mode if false
  */
-const activeMock = false;
+const activeMock = true;
 
 /** Class representing API methods */
 class API {
