@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.694d5cb0.chunk.css",
+    "main.js": "/static/js/main.fcaa9edf.chunk.js",
+    "main.js.map": "/static/js/main.fcaa9edf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.525db9bf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.525db9bf.js.map",
+    "static/js/2.a0fc9269.chunk.js": "/static/js/2.a0fc9269.chunk.js",
+    "static/js/2.a0fc9269.chunk.js.map": "/static/js/2.a0fc9269.chunk.js.map",
+    "static/js/3.8b57e320.chunk.js": "/static/js/3.8b57e320.chunk.js",
+    "static/js/3.8b57e320.chunk.js.map": "/static/js/3.8b57e320.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.694d5cb0.chunk.css.map": "/static/css/main.694d5cb0.chunk.css.map",
+    "static/js/2.a0fc9269.chunk.js.LICENSE.txt": "/static/js/2.a0fc9269.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Roboto-Regular.6bede58e.ttf",
+    "static/media/body-building.9d22814b.svg": "/static/media/body-building.9d22814b.svg",
+    "static/media/calories.25fef86e.svg": "/static/media/calories.25fef86e.svg",
+    "static/media/carbohydrates.95581ba1.svg": "/static/media/carbohydrates.95581ba1.svg",
+    "static/media/cycling.fe885ecd.svg": "/static/media/cycling.fe885ecd.svg",
+    "static/media/lipids.18f60e0e.svg": "/static/media/lipids.18f60e0e.svg",
+    "static/media/loading.3237429d.gif": "/static/media/loading.3237429d.gif",
+    "static/media/logo.fceb97d6.svg": "/static/media/logo.fceb97d6.svg",
+    "static/media/proteins.ffbc3b88.svg": "/static/media/proteins.ffbc3b88.svg",
+    "static/media/swimming.bc12b705.svg": "/static/media/swimming.bc12b705.svg",
+    "static/media/yoga.76760efc.svg": "/static/media/yoga.76760efc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.525db9bf.js",
+    "static/js/2.a0fc9269.chunk.js",
+    "static/css/main.694d5cb0.chunk.css",
+    "static/js/main.fcaa9edf.chunk.js"
+  ]
+}
